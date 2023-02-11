@@ -8,7 +8,7 @@ const sum = (arr) => {
   } , 0);
 };
 
-const multiply = (arr) => arr.reduce((total, value) => total *= value, 1);
+const multiply = (arr) => arr.reduce((total, value) => total * value, 1);
 
 const power = (x, pow) => Math.pow(x,pow);
 
