@@ -8,16 +8,20 @@ const sum = (arr) => {
   } , 0);
 };
 
-const multiply = function() {
+const multiply = (arr) => arr.reduce((total, value) => total *= value, 1);
 
-};
+const power = (x, pow) => Math.pow(x,pow);
 
-const power = function() {
-	
-};
+const factorial = (x) => {
+  if (x === 0) return 1;
 
-const factorial = function() {
-	
+  let total = x;
+  for (let i = x - 1; i > 0; i--)
+  {
+      total *= i;
+  }
+
+  return total;
 };
 
 // Do not edit below this line
